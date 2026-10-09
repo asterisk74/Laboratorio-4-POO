@@ -27,27 +27,6 @@ Los archivos contienen ejemplos de uso y resultados mostrados en pantalla. En el
 | Visual Studio Code | Edición del código fuente. |
 | Navegador web | Visualización de los resultados. |
 
-## 📁 Estructura del proyecto
-
-```text
-PracticaPOO/
-├── imagenes/
-│   ├── 01-coche-herencia.png
-│   ├── 02-late-static-binding.png
-│   ├── 03-clase-final.png
-│   ├── 04-circulo.png
-│   ├── 05-estudiante.png
-│   └── 06-docente.png
-├── coche.php
-├── EjemploLateStatic.php
-├── ImpedirHerencia.php
-├── circulo.php
-├── Persona.php
-├── Estudiante.php
-├── Docente.php
-└── README.md
-```
-
 ## 💻 Desarrollo de los ejercicios y resultados
 
 ### Problema #1: Herencia de clases (`coche.php`)
@@ -63,7 +42,8 @@ Color: negro
 Extras: TV
 ```
 
-![Resultado de la herencia entre Coche y CocheDeLujo](imagenes/01-coche-herencia.png)
+<img width="207" height="89" alt="Screenshot 2026-10-08 190231" src="https://github.com/user-attachments/assets/758667f1-173a-4542-8c2a-145f420927f7" />
+
 
 ### Problema #2: Métodos estáticos y enlace estático tardío (`EjemploLateStatic.php`)
 
@@ -77,7 +57,8 @@ El archivo entregado utiliza `static::miFuncion()`, por lo que la llamada toma e
 B
 ```
 
-![Resultado del ejemplo con static](imagenes/02-late-static-binding.png)
+<img width="65" height="56" alt="Screenshot 2026-10-08 190145" src="https://github.com/user-attachments/assets/151668c5-7904-4a81-8381-6bd8ba49d4ac" />
+
 
 **Comparación solicitada por la guía:** si se sustituye temporalmente `static::miFuncion()` por `self::miFuncion()` dentro de `otraFuncion()`, se hace referencia al método definido en `A`, por lo que el resultado esperado es `A`. La captura adjunta corresponde únicamente a la ejecución con `static::`.
 
@@ -93,7 +74,8 @@ PHP impide que una clase `final` sea heredada. Por ello, el programa muestra un 
 Fatal error: Class cocheDeLujo cannot extend final class Coche
 ```
 
-![Error esperado al intentar heredar de una clase final](imagenes/03-clase-final.png)
+<img width="1147" height="140" alt="Screenshot 2026-10-08 190213" src="https://github.com/user-attachments/assets/e7061f67-765b-403c-8a57-ea29ef55754c" />
+
 
 > **Nota:** Este archivo se utiliza para demostrar el error y, por tanto, no termina su ejecución de manera normal. Debe probarse de forma independiente de los demás ejercicios.
 
@@ -110,7 +92,8 @@ Se crea un objeto con radio `4` y se muestran ambos resultados con dos decimales
 Perímetro del círculo: 25.13
 ```
 
-![Área y perímetro de un círculo de radio cuatro](imagenes/04-circulo.png)
+<img width="441" height="57" alt="Screenshot 2026-10-08 190222" src="https://github.com/user-attachments/assets/682a7e8e-e972-47ec-aa13-112db1ec857a" />
+
 
 ### Problema #5: Herencia entre Persona, Estudiante y Docente
 
@@ -120,11 +103,13 @@ En este ejercicio se crea una clase principal llamada `Persona` y dos clases que
 
 **Archivo `Estudiante.php`:** hereda de `Persona` y agrega `indiceAcademico`, `cohorte`, `estadoAcademico` y `modalidadEstudio`. En la ejecución de ejemplo se muestran los datos de Juan Perez, con índice académico `3.5` y cohorte `2023`.
 
-![Resultado de la clase Estudiante](imagenes/05-estudiante.png)
+<img width="460" height="192" alt="Screenshot 2026-10-08 190203" src="https://github.com/user-attachments/assets/db4809ab-d7ad-45f9-bd5f-ea2b61c2c4b4" />
+
 
 **Archivo `Docente.php`:** también hereda de `Persona` y agrega `codigoDocente`, `departamento`, `categoriaDocente`, `tituloAcademico` y `tipoContratacion`. En la ejecución de ejemplo se muestran los datos de Carlos Rodriguez, con código `DOC001`.
 
-![Resultado de la clase Docente](imagenes/06-docente.png)
+<img width="479" height="243" alt="Screenshot 2026-10-08 190051" src="https://github.com/user-attachments/assets/6539ca19-c035-43f6-b833-f644056b567a" />
+
 
 ## ▶️ Cómo ejecutar la práctica
 
